@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guestbook-ui-sourcecode-bcknd
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: guestbook-ui-sourcecode-bcknd
+  template:
+    metadata:
+      labels:
+        app: guestbook-ui-sourcecode-bcknd
+        tst: tst-1111277
+    spec:
+      containers:
+      - image: omniregistry/back-end:b5b03c98e5d562140dc5081cc1868138623acafa
+        name: guestbook-ui-bcknd
+        ports:
+        - containerPort: 80

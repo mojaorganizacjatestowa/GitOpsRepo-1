@@ -15,7 +15,7 @@ spec:
         tst: tst-1111277
     spec:
       containers:
-      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
+      - image: omniregistry/front-end:c9af71085ab1f51dd1fe07688cfa960e5fa8c82e+g
         name: guestbook-ui
         ports:
         - containerPort: 80

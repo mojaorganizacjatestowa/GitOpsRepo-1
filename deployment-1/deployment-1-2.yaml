@@ -15,7 +15,7 @@ spec:
         tst: tst-1111277
     spec:
       containers:
-      - image: omniregistry/back-end:b7179a9e47116703827c3be69b82778454c7fd57
+      - image: omniregistry/back-end:90c2d48e765f081effdab9729a980178e6dd6bd3
         name: guestbook-ui-bcknd
         ports:
         - containerPort: 80

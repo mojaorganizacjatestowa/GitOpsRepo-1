@@ -12,7 +12,7 @@ spec:
     metadata:
       labels:
         app: guestbook-ui-sourcecode-bcknd
-        tst: tst-1111277
+        tst: tst-111127755
     spec:
       containers:
       - image: omniregistry/back-end:97adde3729d83aea1324ef09ffcefd09306bc91c
